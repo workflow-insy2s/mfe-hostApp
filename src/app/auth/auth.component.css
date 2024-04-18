@@ -80,3 +80,16 @@ a:hover {
     text-decoration: underline;
 }
 
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Ajustez la hauteur selon vos besoins */
+  }
+  
+  .container img {
+    max-width: 100%; /* Redimensionne l'image pour s'adapter à la largeur du conteneur */
+    max-height: 100%; /* Redimensionne l'image pour s'adapter à la hauteur du conteneur */
+  }
+
