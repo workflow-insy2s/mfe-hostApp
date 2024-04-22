@@ -1,0 +1,32 @@
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="container">
+                <img src="./assets/logo2.png" alt="Votre image">
+            </div>
+            
+            <form>
+                <h1 class="titre-bleu">Code de vérification envoyé Vérifiez votre email</h1>
+                <h3> </h3>
+
+                <div>
+                    <label for="username">Email :</label>
+                    <div>
+                        <input type="email" id="email" name="email" [(ngModel)]="email" required placeholder="Email">
+                      </div>                </div>
+
+
+                <div>
+                    <label for="code">Code :</label>
+                    <div>
+                        <input type="text" id="code" name="code" [(ngModel)]="code" required placeholder="code">
+                      </div>                </div>
+
+                
+                <button type="button" (click)="verfierCode(email,code)" >vérifier</button>
+            </form>
+            <p></p>
+            
+        </div>
+    </div>
+</body>

@@ -2,10 +2,17 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthComponent } from './auth/auth.component';
 import { loadRemoteModule } from '@angular-architects/module-federation';
-
+import { ForgetPasswordComponent } from './forget-password/forget-password.component';
+import { VerificationCodeComponent} from './verification-code/verification-code.component';
+import { RestPasswordComponent } from './rest-password/rest-password.component';
 export const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
   {path:'home',component:AuthComponent},
+  {path:'forgetPasswordComponent',component:ForgetPasswordComponent},
+  {path:'verificationCodeComponent',component:VerificationCodeComponent},
+  {path:'restPasswordComponent',component:RestPasswordComponent},
+
+
   {
       path:'mfe1',
       loadChildren:()=>{

@@ -2,10 +2,12 @@
     <div class="login-container">
         <div class="login-box">
             <div class="container">
-                <img src="./assets/m.jpeg" alt="Votre image">
+                <img src="./assets/logo2.png" alt="Votre image">
             </div>
             
             <form>
+                <h1 class="titre-bleu">Se connecter</h1>
+
                 <div>
                     <label for="username">Nom d'utilisateur :</label>
                     <div>
@@ -20,10 +22,10 @@
                       </div>                </div>
 
                 
-                <button type="button" (click)="login2()">Log In</button>
+                <button type="button" (click)="login2()">Se connecter</button>
             </form>
             <p></p>
-            <button class="register-btn" >Forgot Password?</button>
+            <button class="register-btn" routerLink="/forgetPasswordComponent" >Mot de passe oublié?</button>
         </div>
     </div>
 </body>

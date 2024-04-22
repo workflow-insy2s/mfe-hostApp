@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { KeycloakServiceService } from '../keycloak-service.service';
 import { LoginInfo } from './class/LoginInfo';
+import Swal from 'sweetalert2';
 
 import {SharedDataService } from './SharedDataService'
 
@@ -70,6 +71,10 @@ export class AuthComponent implements OnInit {
       error => {
         // Gestion des erreurs
         console.error('Erreur lors de la connexion : ', error);
+        Swal.fire('Nom d utilisateur ou mot de passe incorrect ', '', 'error');
+        //window.location.reload();
+
+
       }
     );
   }
